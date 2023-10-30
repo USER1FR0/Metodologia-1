@@ -1,0 +1,30 @@
+Reloj_Digital_Ciclo_Para
+algoritmo Reloj_Digital_Ciclo_Para
+ definir ch,cm,s como entero;
+escribir "Ingrese la hora";
+leer ch;
+escribir "Ingrese los minutos";
+leer cm;
+escribir "Ingrese los Segundos";
+leer s;
+
+si ch<=24 y ch>=0 y cm<=60 y cm>=0 y s<=60 y s>=0 entonces
+  mientras ch<=23 hacer
+          mientras cm<=59 hacer 
+                 mientras s<=59 hacer
+                          Escribir ch,":",cm,":",s;
+                          esperar 1 Segundo;
+                          limpiar pantalla
+                          s<-s+1;
+                          finmientras
+                          s<-0;
+                cm<- cm+1;
+           finmientras
+           ch<-ch+1;
+ finmientras
+sino 
+escribir "Los datos no son correctos";
+finsi
+    finalgoritmo
+
+//Código realizado en 'Pseudocode' App for Android

@@ -1,0 +1,9 @@
+Saludar_10_Veces_Ciclo_Para
+algoritmo Saludar10veces
+ definir c como numerico;
+ para c<-1 hasta 10 con paso 1 hacer
+       Escribir c,"-°Hola Mundo";
+ FinPara
+    finalgoritmo
+
+//Código realizado en 'Pseudocode' App for Android

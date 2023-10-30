@@ -1,0 +1,20 @@
+Sembrar_Zanahorias_Ciclo_Para
+Proceso Sembrar_Zanahorias
+	Definir z, ,s,c Como Entero;
+	Escribir "Ingresar el numero de zanahorias que desea plantar";
+	Leer z;
+  s<-0;
+	Si z >= 1 y z <= 1000 Entonces
+		para c <- 1 Hasta z con paso 1 Hacer
+			EscribirSinSaltar "* ";
+			Si c mod 10 = 0 Entonces
+         s<-s+1;
+				Escribir "",s;
+			FinSi
+		FinPara
+	SiNo
+		Escribir "Imposible sembrar tantas zanahorias";
+	FinSi
+FinProceso
+
+//Código realizado en 'Pseudocode' App for Android
