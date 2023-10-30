@@ -1,0 +1,14 @@
+Saludar_10_Veces_Nombre_Ciclo_Para
+algoritmo Saludar10vecesNombre
+ definir c como numerico;
+definir nombre como texto;
+
+escribir 'Digite su nombre';
+leer nombre;
+
+ para c<-1 hasta 10 con paso 1 hacer
+       Escribir c,"-°Hola ", nombre;
+ FinPara
+    finalgoritmo
+
+//Código realizado en 'Pseudocode' App for Android

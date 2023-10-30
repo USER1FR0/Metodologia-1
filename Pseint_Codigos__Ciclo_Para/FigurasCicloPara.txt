@@ -1,0 +1,63 @@
+Figuras_Ciclo_Para
+Algoritmo Figuras
+	definir opcion como entero;
+	escribir "Figura 1->Cuadrado";
+	escribir "Figura 2->Rectangulo";
+	escribir "Figura 3->Triangulo";
+	escribir "Que Figura desea Imprimir: ";
+	Leer opcion;
+		 Si opcion = 1 Entonces
+			definir lado, c,j Como Entero;
+			definir linea como texto;
+			
+			Escribir "Ingresa el lado ";
+			Leer lado;
+			
+			Para j <- 1 Hasta lado  Hacer
+				linea <- "";
+				Para c <- 1 Hasta lado Con Paso 1 Hacer
+					linea <- Concatenar (linea,"* ");
+				FinPara
+				Escribir linea;		
+			FinPara
+			SiNo
+				Si opcion = 2 Entonces 
+				Definir base, altura Como Entero;
+				definir c, j Como Entero;
+				
+				EscribirSinSaltar "Ingresar base";
+				Leer base;
+				
+				EscribirSinSaltar "Ingresar altura";
+				leer altura;
+				
+				Para c <- 1 Hasta base Con Paso 1 Hacer
+					Para j<- 1 Hasta altura Con Paso 1 Hacer
+						EscribirSinSaltar "*";
+					FinPara
+					Escribir "";
+				FinPara
+			SiNO
+				
+				Si opcion = 3 Entonces
+					Definir filas Como Entero;
+					definir c, j Como Entero;
+					
+					EscribirSinSaltar "Ingresar Numero de filas ";
+					Leer filas;
+					
+					Para c <- 0 Hasta filas -1 Con Paso 1 Hacer
+						Para j<- 0 Hasta (filas - c -2) Con Paso 1 Hacer
+							EscribirSinSaltar "* ";
+						FinPara
+						Escribir "*";
+					FinPara
+						Sino
+					Escribir "Opción Incorrecta";
+				FinSi
+         finsi
+			Finsi
+		FinSi
+FinAlgoritmo
+
+//Código realizado en 'Pseudocode' App for Android

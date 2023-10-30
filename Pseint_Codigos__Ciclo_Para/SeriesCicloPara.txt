@@ -1,0 +1,63 @@
+Series_Ciclo_Para
+Algoritmo Series
+	definir opcion,c como entero;
+	escribir "======================";
+	escribir "|    Series          |";
+	Escribir "|                    |";
+	Escribir "======================";
+	Escribir "| [1] SERIE 1 5 AL NUMERO 500                |";
+	Escribir "| [2] SERIE 2 500 AL NUMERO  5.              |";
+	Escribir "| [3] SERIE DE FINOBACCIN                        |";
+	Escribir "| [4] SERIE 4 FACTORIAL UN NUMERO    |";
+	ESCRIBIRSinSaltar " ELIGE LA OPCION : ";
+	LEER opcion;
+	
+	si opcion >=1 y opcion <=4 Entonces
+		si opcion =1 Entonces
+			para c<- 5 hasta 500 con paso 5 Hacer
+				escribirSinSaltar c, "  ";
+			FinPara
+		FinSi
+		
+		si opcion =2 Entonces
+			para c<- 500 hasta 5 con paso -5 Hacer
+				escribirSinSaltar c, "  ";
+			FinPara
+		FinSi
+		
+	si opcion = 3 Entonces
+		definir a,b,cont,d como numerico
+     a<-1;
+     b<-0;
+     c<-0;
+     escribir "Cuantos digitos de la serie desea imprimir? ";
+     leer d;
+     Para cont<-d hasta 0 con paso -1  hacer
+     escribirSinSaltar  c,", ";
+     c<- a+b; 
+     a<-b;
+     b<-c;
+     finPara
+	FinSi
+	
+	si opcion=4 Entonces
+		definir fact,acumulador como entero;
+		EscribirSinSaltar "Ingresa valor factorial";
+		leer fact;
+		acumulador<-1;
+		para c<-fact hasta 1 con paso -1 Hacer
+			acumulador<-acumulador*c;
+			escribirSinSaltar c, "*";
+			esperar 2 segundos;
+		FinPara
+		escribir " ";
+		escribir "El resultado del factorial es -> ",acumulador;
+	FinSi
+SiNo
+	Escribir "opcion incorrecta";
+FinSi
+
+	
+FinAlgoritmo
+
+//Código realizado en 'Pseudocode' App for Android
